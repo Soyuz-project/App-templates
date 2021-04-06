@@ -44,14 +44,49 @@
           "attrs": {
             "className": "",
             "optionsClassName": "-pad-s -bg-c-light-gray -nav-v-separator",
-            "showIcon" : true,
-            "showLabel" : false,
+            "showIcon": true,
+            "showLabel": false,
             "default_data": [
-              { "slug": "-default", "value":"", "name":"Padding", "icon": {"path":"M 2,2 V 22 H 22 V 2 Z M 4,3 H 5 V 4 H 7 V 3 h 2 v 1 h 2 V 3 h 2 v 1 h 2 V 3 h 2 v 1 h 2 V 3 h 1 v 1 h 1 v 1 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 1 h -1 v 1 h -1 v -1 h -2 v 1 h -2 v -1 h -2 v 1 H 11 V 20 H 9 v 1 H 7 V 20 H 5 v 1 H 4 V 20 H 3 V 19 H 4 V 17 H 3 V 15 H 4 V 13 H 3 V 11 H 4 V 9 H 3 V 7 H 4 V 5 H 3 V 4 h 1 z"}},
-              { "slug": "-pad-xs", "value": "-pad-xs", "name": "Padding extra small", "icon": {"path":"M 2 2 L 2 22 L 22 22 L 22 2 L 2 2 z M 3 3 L 7 3 L 9 3 L 11 3 L 13 3 L 15 3 L 17 3 L 21 3 L 21 21 L 3 21 L 3 17 L 3 15 L 3 13 L 3 11 L 3 9 L 3 7 L 3 3 z M 4 4 L 4 7 L 5 7 L 5 5 L 7 5 L 7 4 L 4 4 z M 9 4 L 9 5 L 11 5 L 11 4 L 9 4 z M 13 4 L 13 5 L 15 5 L 15 4 L 13 4 z M 17 4 L 17 5 L 19 5 L 19 7 L 20 7 L 20 4 L 17 4 z M 4 9 L 4 11 L 5 11 L 5 9 L 4 9 z M 19 9 L 19 11 L 20 11 L 20 9 L 19 9 z M 4 13 L 4 15 L 5 15 L 5 13 L 4 13 z M 19 13 L 19 15 L 20 15 L 20 13 L 19 13 z M 4 17 L 4 20 L 7 20 L 7 19 L 5 19 L 5 17 L 4 17 z M 19 17 L 19 19 L 17 19 L 17 20 L 20 20 L 20 17 L 19 17 z M 9 19 L 9 20 L 11 20 L 11 19 L 9 19 z M 13 19 L 13 20 L 15 20 L 15 19 L 13 19 z "} },
-              { "slug": "-pad-s", "value": "-pad-s", "name": "Padding small", "icon": {"path":"M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 5,5 V 7 H 6 V 6 H 7 V 5 Z m 4,0 v 1 h 2 V 5 Z m 4,0 v 1 h 2 V 5 Z m 4,0 v 1 h 1 v 1 h 1 V 5 Z M 5,9 v 2 H 6 V 9 Z m 13,0 v 2 h 1 V 9 Z M 5,13 v 2 h 1 v -2 z m 13,0 v 2 h 1 V 13 Z M 5,17 v 2 H 7 V 18 H 6 v -1 z m 13,0 v 1 h -1 v 1 h 2 v -2 z m -9,1 v 1 h 2 v -1 z m 4,0 v 1 h 2 v -1 z"}},
-              { "slug": "-pad-m", "value": "-pad-m", "name": "Padding medium", "icon": {"path":"M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 6,6 V 8 H 7 V 7 H 8 V 6 Z m 3,0 v 1 h 2 V 6 Z m 4,0 v 1 h 2 V 6 Z m 3,0 v 1 h 1 v 1 h 1 V 6 Z M 6,9 v 2 H 7 V 9 Z m 11,0 v 2 h 1 V 9 Z M 6,13 v 2 h 1 v -2 z m 11,0 v 2 h 1 V 13 Z M 6,16 v 2 H 8 V 17 H 7 v -1 z m 11,0 v 1 h -1 v 1 h 2 v -2 z m -8,1 v 1 h 2 v -1 z m 4,0 v 1 h 2 v -1 z"}},
-              { "slug": "-pad-l", "value": "-pad-l", "name": "Padding large", "icon": {"path":"M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 7,7 V 9 H 8 V 8 H 9 V 7 Z m 3,0 v 1 h 1 V 7 Z m 3,0 v 1 h 1 V 7 Z m 2,0 v 1 h 1 v 1 h 1 V 7 Z m -8,3 v 1 h 1 v -1 z m 9,0 v 1 h 1 v -1 z m -9,3 v 1 h 1 v -1 z m 9,0 v 1 h 1 v -1 z m -9,2 v 2 H 9 V 16 H 8 v -1 z m 9,0 v 1 h -1 v 1 h 2 v -2 z m -6,1 v 1 h 1 v -1 z m 3,0 v 1 h 1 v -1 z"}}
+              {
+                "slug": "-default",
+                "value": "",
+                "name": "Padding",
+                "icon": {
+                  "path": "M 2,2 V 22 H 22 V 2 Z M 4,3 H 5 V 4 H 7 V 3 h 2 v 1 h 2 V 3 h 2 v 1 h 2 V 3 h 2 v 1 h 2 V 3 h 1 v 1 h 1 v 1 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 2 h -1 v 2 h 1 v 1 h -1 v 1 h -1 v -1 h -2 v 1 h -2 v -1 h -2 v 1 H 11 V 20 H 9 v 1 H 7 V 20 H 5 v 1 H 4 V 20 H 3 V 19 H 4 V 17 H 3 V 15 H 4 V 13 H 3 V 11 H 4 V 9 H 3 V 7 H 4 V 5 H 3 V 4 h 1 z"
+                }
+              },
+              {
+                "slug": "-pad-xs",
+                "value": "-pad-xs",
+                "name": "Padding extra small",
+                "icon": {
+                  "path": "M 2 2 L 2 22 L 22 22 L 22 2 L 2 2 z M 3 3 L 7 3 L 9 3 L 11 3 L 13 3 L 15 3 L 17 3 L 21 3 L 21 21 L 3 21 L 3 17 L 3 15 L 3 13 L 3 11 L 3 9 L 3 7 L 3 3 z M 4 4 L 4 7 L 5 7 L 5 5 L 7 5 L 7 4 L 4 4 z M 9 4 L 9 5 L 11 5 L 11 4 L 9 4 z M 13 4 L 13 5 L 15 5 L 15 4 L 13 4 z M 17 4 L 17 5 L 19 5 L 19 7 L 20 7 L 20 4 L 17 4 z M 4 9 L 4 11 L 5 11 L 5 9 L 4 9 z M 19 9 L 19 11 L 20 11 L 20 9 L 19 9 z M 4 13 L 4 15 L 5 15 L 5 13 L 4 13 z M 19 13 L 19 15 L 20 15 L 20 13 L 19 13 z M 4 17 L 4 20 L 7 20 L 7 19 L 5 19 L 5 17 L 4 17 z M 19 17 L 19 19 L 17 19 L 17 20 L 20 20 L 20 17 L 19 17 z M 9 19 L 9 20 L 11 20 L 11 19 L 9 19 z M 13 19 L 13 20 L 15 20 L 15 19 L 13 19 z "
+                }
+              },
+              {
+                "slug": "-pad-s",
+                "value": "-pad-s",
+                "name": "Padding small",
+                "icon": {
+                  "path": "M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 5,5 V 7 H 6 V 6 H 7 V 5 Z m 4,0 v 1 h 2 V 5 Z m 4,0 v 1 h 2 V 5 Z m 4,0 v 1 h 1 v 1 h 1 V 5 Z M 5,9 v 2 H 6 V 9 Z m 13,0 v 2 h 1 V 9 Z M 5,13 v 2 h 1 v -2 z m 13,0 v 2 h 1 V 13 Z M 5,17 v 2 H 7 V 18 H 6 v -1 z m 13,0 v 1 h -1 v 1 h 2 v -2 z m -9,1 v 1 h 2 v -1 z m 4,0 v 1 h 2 v -1 z"
+                }
+              },
+              {
+                "slug": "-pad-m",
+                "value": "-pad-m",
+                "name": "Padding medium",
+                "icon": {
+                  "path": "M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 6,6 V 8 H 7 V 7 H 8 V 6 Z m 3,0 v 1 h 2 V 6 Z m 4,0 v 1 h 2 V 6 Z m 3,0 v 1 h 1 v 1 h 1 V 6 Z M 6,9 v 2 H 7 V 9 Z m 11,0 v 2 h 1 V 9 Z M 6,13 v 2 h 1 v -2 z m 11,0 v 2 h 1 V 13 Z M 6,16 v 2 H 8 V 17 H 7 v -1 z m 11,0 v 1 h -1 v 1 h 2 v -2 z m -8,1 v 1 h 2 v -1 z m 4,0 v 1 h 2 v -1 z"
+                }
+              },
+              {
+                "slug": "-pad-l",
+                "value": "-pad-l",
+                "name": "Padding large",
+                "icon": {
+                  "path": "M 2,2 V 22 H 22 V 2 Z m 1,1 h 4 2 2 2 2 2 4 V 21 H 3 V 17 15 13 11 9 7 Z M 7,7 V 9 H 8 V 8 H 9 V 7 Z m 3,0 v 1 h 1 V 7 Z m 3,0 v 1 h 1 V 7 Z m 2,0 v 1 h 1 v 1 h 1 V 7 Z m -8,3 v 1 h 1 v -1 z m 9,0 v 1 h 1 v -1 z m -9,3 v 1 h 1 v -1 z m 9,0 v 1 h 1 v -1 z m -9,2 v 2 H 9 V 16 H 8 v -1 z m 9,0 v 1 h -1 v 1 h 2 v -2 z m -6,1 v 1 h 1 v -1 z m 3,0 v 1 h 1 v -1 z"
+                }
+              }
             ],
             "source_map": {
               "click": "className"
@@ -63,13 +98,41 @@
           "attrs": {
             "className": "",
             "optionsClassName": "-pad-s -bg-c-light-gray -nav-v-separator",
-            "showIcon" : true,
-            "showLabel" : false,
+            "showIcon": true,
+            "showLabel": false,
             "default_data": [
-              { "slug": "-default", "value":"", "name":"Align", "icon": {"path":"M 2,5 V 7 H 22 V 5 Z m 0,4 v 2 H 16 V 9 Z m 0,4 v 2 h 20 v -2 z m 0,4 v 2 h 14 v -2 z"}},
-              { "slug": "-left", "value": "-left", "name": "Align left", "icon": {"path":"M 2,5 V 7 H 22 V 5 Z m 0,4 v 2 H 16 V 9 Z m 0,4 v 2 h 20 v -2 z m 0,4 v 2 h 14 v -2 z"} },
-              { "slug": "-center", "value": "-center", "name": "Align center", "icon": {"path":"M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 5 9 L 5 11 L 19 11 L 19 9 L 5 9 z M 2 13 L 2 15 L 22 15 L 22 13 L 2 13 z M 5 17 L 5 19 L 19 19 L 19 17 L 5 17 z"} },
-              { "slug": "-right", "value": "-right", "name": "Align right", "icon": {"path":"M 2,5 V 7 H 22 V 5 Z m 6,4 v 2 H 22 V 9 Z m -6,4 v 2 h 20 v -2 z m 6,4 v 2 h 14 v -2 z"} }
+              {
+                "slug": "-default",
+                "value": "",
+                "name": "Align",
+                "icon": {
+                  "path": "M 2,5 V 7 H 22 V 5 Z m 0,4 v 2 H 16 V 9 Z m 0,4 v 2 h 20 v -2 z m 0,4 v 2 h 14 v -2 z"
+                }
+              },
+              {
+                "slug": "-left",
+                "value": "-left",
+                "name": "Align left",
+                "icon": {
+                  "path": "M 2,5 V 7 H 22 V 5 Z m 0,4 v 2 H 16 V 9 Z m 0,4 v 2 h 20 v -2 z m 0,4 v 2 h 14 v -2 z"
+                }
+              },
+              {
+                "slug": "-center",
+                "value": "-center",
+                "name": "Align center",
+                "icon": {
+                  "path": "M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 5 9 L 5 11 L 19 11 L 19 9 L 5 9 z M 2 13 L 2 15 L 22 15 L 22 13 L 2 13 z M 5 17 L 5 19 L 19 19 L 19 17 L 5 17 z"
+                }
+              },
+              {
+                "slug": "-right",
+                "value": "-right",
+                "name": "Align right",
+                "icon": {
+                  "path": "M 2,5 V 7 H 22 V 5 Z m 6,4 v 2 H 22 V 9 Z m -6,4 v 2 h 20 v -2 z m 6,4 v 2 h 14 v -2 z"
+                }
+              }
             ],
             "source_map": {
               "click": "className"
@@ -84,7 +147,8 @@
             "actions": [
               {
                 "routerQuery": {
-                  "open": "{math.random(10)}"
+                  "rightpanel": "soyuz-new-blocks-list",
+                  "tick": "{math.random(10)}"
                 }
               }
             ]
@@ -98,7 +162,82 @@
             "actions": [
               {
                 "routerQuery": {
-                  "open": "{math.random(10)}"
+                  "rightpanel": "soyuz-block-options",
+                  "tick": "{math.random(10)}"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Block option",
+      "slug": "soyuz-block-options",
+      "type": "page",
+      "plugin_slug": "soyuz-targeter-app",
+      "blocks": [
+        {
+          "blockName": "core/paragraph",
+          "attrs": {
+            "className": "",
+            "tagName": "h2",
+            "content": "Block options"
+          }
+        }
+      ]
+    },
+    {
+      "name": "New blocks list",
+      "slug": "soyuz-new-blocks-list",
+      "type": "page",
+      "plugin_slug": "soyuz-targeter-app",
+      "blocks": [
+        {
+          "blockName": "core/paragraph",
+          "attrs": {
+            "className": "",
+            "tagName": "h2",
+            "content": "Blocks list"
+          }
+        },
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "content": "Content",
+            "actions": [
+              {
+                "routerQuery": {
+                  "tick": "{math.random(10)}"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "content": "Buttons",
+            "actions": [
+              {
+                "routerQuery": {
+                  "tick": "{math.random(10)}"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "content": "Layouts",
+            "actions": [
+              {
+                "routerQuery": {
+                  "tick": "{math.random(10)}"
                 }
               }
             ]

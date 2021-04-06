@@ -1,0 +1,45 @@
+{
+  "name": "Right bar",
+  "type": "plugin",
+  "plugin_slug": "soyuz-rightbar-app",
+  "events": [
+    {
+      "name": "Right panel loader",
+      "slug": "right-panel-loader",
+      "source": "pages",
+      "method": "READ",
+      "query_variables": {
+        "slug": "{router.query.rightpanel}"
+      }
+    }
+  ],
+  "pages": [],
+  "blocks": [
+    {
+      "blockName": "core/group",
+      "attrs": {
+        "source": "pages",
+        "source_slug": "footer",
+        "source_path": "blocks.2",
+        "plugin_slug": "soyuz-rightbar-app",
+        "className": "-abs-right -tight -fix -h-full -bg-c-mask  -scroll -z-m"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "DataFrame",
+          "attrs": {
+            "className": "-g -gap-s -w-full -bg-c-white",
+            "conditionalLogic": [
+              {
+                "key": "{router.query.rightpanel}",
+                "value": true,
+                "condition": "=="
+              }
+            ],
+            "event": "right-panel-loader"
+          }
+        }
+      ]
+    }
+  ]
+}
