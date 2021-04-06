@@ -22,20 +22,20 @@
         "source_slug": "footer",
         "source_path": "blocks.2",
         "plugin_slug": "soyuz-rightbar-app",
-        "className": "-abs-right -tight -fix -h-full -bg-c-mask  -scroll -z-m"
+        "className": "-abs-right -tight -fix -h-full -bg-c-mask  -scroll -z-m",
+        "conditionalLogic": [
+          {
+            "key": "{router.query.rightpanel}",
+            "value": true,
+            "condition": "=="
+          }
+        ]
       },
       "innerBlocks": [
         {
           "blockName": "DataFrame",
           "attrs": {
-            "className": "-g -gap-s -w-full -bg-c-white",
-            "conditionalLogic": [
-              {
-                "key": "{router.query.rightpanel}",
-                "value": true,
-                "condition": "=="
-              }
-            ],
+            "className": "-g -gap-s -pad-xs -w-full -bg-c-white",
             "event": "right-panel-loader"
           }
         }

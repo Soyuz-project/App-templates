@@ -1,0 +1,8 @@
+{
+  "name": "Blocks templates default",
+  "type": "plugin",
+  "plugin_slug": "soyuz-blocks-templates",
+  "events": [],
+  "pages": [],
+  "blocks": []
+}

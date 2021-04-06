@@ -24,8 +24,8 @@
         {
           "blockName": "core/paragraph",
           "attrs": {
-            "className": "-reset",
-            "tagName": "h4",
+            "className": "-reset -pad-xs",
+            "tagName": "h5",
             "content": "Targeter controlls"
           }
         },
@@ -147,8 +147,7 @@
             "actions": [
               {
                 "routerQuery": {
-                  "rightpanel": "soyuz-new-blocks-list",
-                  "tick": "{math.random(10)}"
+                  "rightpanel": "soyuz-new-blocks-list"
                 }
               }
             ]
@@ -162,8 +161,7 @@
             "actions": [
               {
                 "routerQuery": {
-                  "rightpanel": "soyuz-block-options",
-                  "tick": "{math.random(10)}"
+                  "rightpanel": "soyuz-block-options"
                 }
               }
             ]
@@ -194,17 +192,37 @@
       "plugin_slug": "soyuz-targeter-app",
       "blocks": [
         {
-          "blockName": "core/paragraph",
+          "blockName": "core/group",
           "attrs": {
-            "className": "",
-            "tagName": "h2",
-            "content": "Blocks list"
-          }
+            "className": "tr -reset -middle -row -between"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/paragraph",
+              "attrs": {
+                "className": "",
+                "tagName": "h2",
+                "content": "Blocks list"
+              }
+            },
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-b -b-light-gray -hvr-invert -pad-xs",
+                "content": "x",
+                "actions": [
+                  {
+                    "routerDelQuery": ["rightpanel"]
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "className": "-btn-bg -left -b -b-light-gray -pad-s -hvr-invert",
             "content": "Content",
             "actions": [
               {
@@ -218,7 +236,7 @@
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "className": "-btn-bg -left -b -b-light-gray -pad-s -hvr-invert",
             "content": "Buttons",
             "actions": [
               {
@@ -232,7 +250,7 @@
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+            "className": "-btn-bg -left -b -b-light-gray -pad-s -hvr-invert",
             "content": "Layouts",
             "actions": [
               {
@@ -254,7 +272,7 @@
         "source_slug": "soyuz-app-loader",
         "source_path": "blocks.2",
         "plugin_slug": "soyuz-targeter-app",
-        "className": "-left -b -b-light-gray -pad-s -hvr-invert",
+        "className": "-btn-bg -left -b -b-light-gray -pad-s -hvr-invert",
         "content": "open targeter",
         "actions": [
           {
@@ -291,7 +309,7 @@
         {
           "blockName": "DataFrame",
           "attrs": {
-            "className": "tr -td-middle -bg-c-light-gray -td-nav-h-separator",
+            "className": "tr -td-middle -bg-c-light-gray -td-nav-h-separator -abs -abs-bottom",
             "event": "targeter-controlls-loader"
           }
         }
