@@ -1,8 +1,78 @@
 {
   "name": "Blocks templates default",
   "type": "plugin",
-  "plugin_slug": "soyuz-blocks-templates",
+  "plugin_slug": "soyuz-blocks-templates-default",
   "events": [],
-  "pages": [],
+  "pages": [
+    {
+      "name": "Button 1",
+      "slug": "button-1-tpl",
+      "plugin_slug": "soyuz-blocks-templates-default",
+      "type": "tpl",
+      "category": "buttons",
+      "blocks": [
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -td-pad-xs -hvr-invert",
+            "content": "Button 1",
+            "actions": [
+              {
+                "routerQuery": {
+                  "rightpanel": "soyuz-new-blocks-list"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Button 2",
+      "slug": "button-2-tpl",
+      "plugin_slug": "soyuz-blocks-templates-default",
+      "type": "tpl",
+      "category": "buttons",
+      "blocks": [
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -td-pad-xs -hvr-invert",
+            "content": "Button 2",
+            "actions": [
+              {
+                "routerQuery": {
+                  "rightpanel": "soyuz-new-blocks-list"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Button 3",
+      "slug": "button-3-tpl",
+      "plugin_slug": "soyuz-blocks-templates-default",
+      "type": "tpl",
+      "category": "buttons",
+      "blocks": [
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "-left -td-pad-xs -hvr-invert",
+            "content": "Button 3",
+            "actions": [
+              {
+                "routerQuery": {
+                  "rightpanel": "soyuz-new-blocks-list"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "blocks": []
 }

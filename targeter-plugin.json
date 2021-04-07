@@ -12,6 +12,16 @@
       "query_variables": {
         "slug": "targeter-controlls"
       }
+    },
+    {
+      "name": "Load blocks templates",
+      "slug": "load-blocks-templates",
+      "plugin_slug": "soyuz-targeter-app",
+      "source": "pages",
+      "method": "READ",
+      "query_variables": {
+        "type": "tpl"
+      }
     }
   ],
   "pages": [
@@ -27,16 +37,6 @@
             "className": "-reset -pad-xs",
             "tagName": "h5",
             "content": "Targeter controlls"
-          }
-        },
-        {
-          "blockName": "form/input",
-          "attrs": {
-            "className": "-pad-xs",
-            "label": "Edit content",
-            "source_map": {
-              "click": "content"
-            }
           }
         },
         {
@@ -176,11 +176,68 @@
       "plugin_slug": "soyuz-targeter-app",
       "blocks": [
         {
+          "blockName": "core/group",
+          "attrs": {
+            "className": "tr -reset -middle -row -between"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/paragraph",
+              "attrs": {
+                "className": "",
+                "tagName": "h3",
+                "content": "Block options"
+              }
+            },
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-b -b-light-gray -hvr-invert -pad-xs",
+                "content": "x",
+                "actions": [
+                  {
+                    "routerDelQuery": [
+                      "rightpanel"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "blockName": "core/paragraph",
           "attrs": {
-            "className": "",
-            "tagName": "h2",
-            "content": "Block options"
+            "className": "-reset",
+            "content": "Content"
+          }
+        },
+        {
+          "blockName": "form/textarea",
+          "attrs": {
+            "className": "-b -b-light-gray -pad-s",
+            "placeholder": "Content",
+            "source_map": {
+              "click": "content"
+            }
+          }
+        }
+        ,
+        {
+          "blockName": "core/paragraph",
+          "attrs": {
+            "className": "-reset",
+            "content": "Class list"
+          }
+        },
+        {
+          "blockName": "form/input",
+          "attrs": {
+            "className": "-b -b-light-gray -pad-s",
+            "placeholder": "ClassList",
+            "source_map": {
+              "click": "className"
+            }
           }
         }
       ]
@@ -201,7 +258,7 @@
               "blockName": "core/paragraph",
               "attrs": {
                 "className": "",
-                "tagName": "h2",
+                "tagName": "h3",
                 "content": "Blocks list"
               }
             },
@@ -212,7 +269,9 @@
                 "content": "x",
                 "actions": [
                   {
-                    "routerDelQuery": ["rightpanel"]
+                    "routerDelQuery": [
+                      "rightpanel"
+                    ]
                   }
                 ]
               }
@@ -227,7 +286,8 @@
             "actions": [
               {
                 "routerQuery": {
-                  "tick": "{math.random(10)}"
+                  "rightpanel": "soyuz-blocks-list",
+                  "cat": "content"
                 }
               }
             ]
@@ -241,7 +301,8 @@
             "actions": [
               {
                 "routerQuery": {
-                  "tick": "{math.random(10)}"
+                  "rightpanel": "soyuz-blocks-list",
+                  "cat": "content"
                 }
               }
             ]
@@ -255,10 +316,56 @@
             "actions": [
               {
                 "routerQuery": {
-                  "tick": "{math.random(10)}"
+                  "rightpanel": "soyuz-blocks-list",
+                  "cat": "content"
                 }
               }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blocks list",
+      "slug": "soyuz-blocks-list",
+      "type": "page",
+      "plugin_slug": "soyuz-targeter-app",
+      "blocks": [
+        {
+          "blockName": "core/group",
+          "attrs": {
+            "className": "tr -reset -middle -row -between"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/paragraph",
+              "attrs": {
+                "className": "",
+                "tagName": "h3",
+                "content": "Blocks list"
+              }
+            },
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-b -b-light-gray -hvr-invert -pad-xs",
+                "content": "x",
+                "actions": [
+                  {
+                    "routerDelQuery": [
+                      "rightpanel"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "blockName": "DataFrame",
+          "attrs": {
+            "className": "-g -gap-s -td-b -td-b-light-gray",
+            "event": "load-blocks-templates"
           }
         }
       ]
@@ -273,7 +380,7 @@
         "source_path": "blocks.2",
         "plugin_slug": "soyuz-targeter-app",
         "className": "-btn-bg -left -b -b-light-gray -pad-s -hvr-invert",
-        "content": "open targeter",
+        "content": "Open Targeter",
         "actions": [
           {
             "set": {
