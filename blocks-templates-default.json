@@ -18,7 +18,7 @@
             "actions": [
               {
                 "set": {
-                  "source": "insert_block",
+                  "source": "insert_block_target_slug",
                   "value": "{this.source_slug}"
                 }
               },
@@ -28,6 +28,18 @@
                   "query_variables": {
                     "slug": "{this.output.0}"
                   }
+                }
+              },
+              {
+                "set": {
+                  "source": "insert_block",
+                  "value": "{this.output.1.0.blocks.0.innerBlocks}"
+                }
+              },
+              {
+                "set": {
+                  "source": "insert_block.0.attrs.foo",
+                  "value": "bar"
                 }
               }
             ]
