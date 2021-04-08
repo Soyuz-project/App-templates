@@ -8,7 +8,6 @@
       "slug": "right-panel-loader",
       "source": "pages",
       "method": "READ",
-      "forced_optimistic":false,
       "query_variables": {
         "slug": "{router.query.rightpanel}"
       }

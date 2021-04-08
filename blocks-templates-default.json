@@ -14,16 +14,33 @@
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -td-pad-xs -hvr-invert",
-            "content": "Button 1",
+            "className": "",
             "actions": [
               {
-                "routerQuery": {
-                  "rightpanel": "soyuz-new-blocks-list"
+                "set": {
+                  "source": "insert_block",
+                  "value": "{this.source_slug}"
+                }
+              },
+              {
+                "get_collection": {
+                  "source": "pages",
+                  "query_variables": {
+                    "slug": "{this.output.0}"
+                  }
                 }
               }
             ]
-          }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-left -pad-xs -hvr-invert",
+                "content": "Button 1"
+              }
+            }
+          ]
         }
       ]
     },
@@ -37,20 +54,37 @@
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -td-pad-xs -hvr-invert",
-            "content": "Button 2",
+            "className": "",
             "actions": [
               {
-                "routerQuery": {
-                  "rightpanel": "soyuz-new-blocks-list"
+                "set": {
+                  "source": "insert_block",
+                  "value": "{this.source_slug}"
+                }
+              },
+              {
+                "get_collection": {
+                  "source": "pages",
+                  "query_variables": {
+                    "slug": "{this.output.0}"
+                  }
                 }
               }
             ]
-          }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-btn-bg -left -pad-xs -hvr-invert",
+                "content": "Button 2"
+              }
+            }
+          ]
         }
       ]
     },
-    {
+     {
       "name": "Button 3",
       "slug": "button-3-tpl",
       "plugin_slug": "soyuz-blocks-templates-default",
@@ -60,16 +94,33 @@
         {
           "blockName": "core/button",
           "attrs": {
-            "className": "-left -td-pad-xs -hvr-invert",
-            "content": "Button 3",
+            "className": "",
             "actions": [
               {
-                "routerQuery": {
-                  "rightpanel": "soyuz-new-blocks-list"
+                "set": {
+                  "source": "insert_block",
+                  "value": "{this.source_slug}"
+                }
+              },
+              {
+                "get_collection": {
+                  "source": "pages",
+                  "query_variables": {
+                    "slug": "{this.output.0}"
+                  }
                 }
               }
             ]
-          }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/button",
+              "attrs": {
+                "className": "-left -pad-xs -b-s -bg-c-primary -hvr-brightness -color-white",
+                "content": "Button 3"
+              }
+            }
+          ]
         }
       ]
     }

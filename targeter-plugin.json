@@ -364,7 +364,7 @@
         {
           "blockName": "DataFrame",
           "attrs": {
-            "className": "-g -gap-s -td-b -td-b-light-gray",
+            "className": "-g -gap-s",
             "event": "load-blocks-templates"
           }
         }
