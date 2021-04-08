@@ -2,24 +2,17 @@
   "name": "Blocks templates default",
   "type": "plugin",
   "plugin_slug": "soyuz-blocks-templates-default",
-  "events": [],
-  "pages": [
+  "events": [
     {
-      "name": "Button 1",
-      "slug": "button-1-tpl",
-      "plugin_slug": "soyuz-blocks-templates-default",
-      "type": "tpl",
-      "category": "buttons",
-      "blocks": [
+      "name": "Insert block",
+      "slug": "soyuz-insert-block",
+      "plugin":"soyuz-blocks-templates-default",
+      "method": "WRITE",
+      "actions":[
         {
-          "blockName": "core/button",
-          "attrs": {
-            "className": "",
-            "actions": [
-              {
                 "set": {
                   "source": "insert_block_target_slug",
-                  "value": "{this.source_slug}"
+                  "value": "{this.parent.source_slug}"
                 }
               },
               {
@@ -38,17 +31,56 @@
               },
               {
                 "set": {
-                  "source": "insert_block.0.attrs.foo",
-                  "value": "bar"
+                  "source": "insert_block.0.attrs.source",
+                  "value": "{store.native_click.source}"
+                }
+              },
+              {
+                "set": {
+                  "source": "insert_block.0.attrs.source_slug",
+                  "value": "{store.native_click.source_slug}"
+                }
+              },
+              {
+                "set": {
+                  "source": "insert_block.0.attrs.source_path",
+                  "value": "{store.native_click.__blockPath}"
+                }
+              },
+              {
+                "set_blocks": {
+                  "value": "{store.insert_block}"
+                }
+              },
+              {
+                "routerQuery": {
+                  "tick": "{math.random(10)}"
                 }
               }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "Button 1",
+      "slug": "button-1-tpl",
+      "plugin_slug": "soyuz-blocks-templates-default",
+      "type": "tpl",
+      "category": "buttons",
+      "blocks": [
+        {
+          "blockName": "core/button",
+          "attrs": {
+            "className": "",
+            "actions": [
+              {"run_event":"soyuz-insert-block"}
             ]
           },
           "innerBlocks": [
             {
               "blockName": "core/button",
               "attrs": {
-                "className": "-left -pad-xs -hvr-invert",
+                "className": "-center -pad-xs -hvr-invert -b -b-light-gray",
                 "content": "Button 1"
               }
             }
@@ -68,27 +100,14 @@
           "attrs": {
             "className": "",
             "actions": [
-              {
-                "set": {
-                  "source": "insert_block",
-                  "value": "{this.source_slug}"
-                }
-              },
-              {
-                "get_collection": {
-                  "source": "pages",
-                  "query_variables": {
-                    "slug": "{this.output.0}"
-                  }
-                }
-              }
+              {"run_event":"soyuz-insert-block"}
             ]
           },
           "innerBlocks": [
             {
               "blockName": "core/button",
               "attrs": {
-                "className": "-btn-bg -left -pad-xs -hvr-invert",
+                "className": "-btn-bg -center -pad-xs -hvr-invert -b -b-light-gray",
                 "content": "Button 2"
               }
             }
@@ -96,7 +115,7 @@
         }
       ]
     },
-     {
+    {
       "name": "Button 3",
       "slug": "button-3-tpl",
       "plugin_slug": "soyuz-blocks-templates-default",
@@ -108,27 +127,14 @@
           "attrs": {
             "className": "",
             "actions": [
-              {
-                "set": {
-                  "source": "insert_block",
-                  "value": "{this.source_slug}"
-                }
-              },
-              {
-                "get_collection": {
-                  "source": "pages",
-                  "query_variables": {
-                    "slug": "{this.output.0}"
-                  }
-                }
-              }
+              {"run_event":"soyuz-insert-block"}
             ]
           },
           "innerBlocks": [
             {
               "blockName": "core/button",
               "attrs": {
-                "className": "-left -pad-xs -b-s -bg-c-primary -hvr-brightness -color-white",
+                "className": "-center -pad-xs -b-s -bg-c-primary -hvr-brightness -color-white",
                 "content": "Button 3"
               }
             }
